@@ -1,0 +1,402 @@
+body{
+    padding: 0;
+    margin: 2px;
+}
+
+.navbar{
+    background: rgb(14,148,67);
+    background: linear-gradient(90deg, rgba(14,148,67,1) 0%, rgba(52,221,90,1) 69%);
+    height: 100px;
+    width: 100%;
+    display: top;
+    align-items: center;
+    color:rgb(255, 255, 255);
+
+}
+.navbar-nav{
+    
+    height: 100px;
+    width: 100%;
+    display: top;
+    align-items: center;
+    color:rgb(255, 255, 255);
+
+}
+.logo{
+    margin-left: 30px;
+    margin-top: 10px;
+}
+
+.aa1{
+    margin-left: 1200px;
+}
+
+.aa2{
+    float: left;
+    list-style: none;
+    margin-left: 60px;
+    color: white;
+    font-size: 18px;
+    margin-top: 15px;
+}
+
+.aa2:hover{
+    color: #045690;
+}
+
+.bb3:hover{
+    color: #045690;
+}
+
+/*.carrosel-slide{
+    display: block;
+    height: 50%;
+    width: 30%;
+    margin: auto;
+    margin-top: 70px;
+    position: relative;
+}
+.slider li {
+    list-style: none;
+    position: absolute;
+}
+
+.slider img {
+    margin: auto;
+    height: 80%;
+    width: 30%;
+    vertical-align: top;
+}*/
+    /* Default stylings */
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+
+    /* Provides background color to body */
+    body {
+        background-color: rgb(255, 235, 235);
+    }
+
+    .h1 {
+         color: #045690;
+         text-align: center;
+ 
+    }
+    
+    .main-heading{
+        float: center;
+        border: transparent thin solid;
+        padding: 5px;
+        margin: 0px 10px 10px 0;
+        max-width: 186px;
+    }
+
+    /* Container stylings: 
+    -> centers the whole content of the page
+    -> defines width and height for container */
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        width: 800px;
+        height: 600px;
+    }
+
+    /* End of container stylings */
+
+    /* Provides padding to main heading */
+    .main-heading {
+        padding: 2rem 0 2rem 0;
+    }
+
+    .content {
+        position: relative;
+    }
+
+
+    /* End of carousel content stylings */
+
+    /* Slideshow stylings */
+    .slideshow {
+        height: 100%;
+        overflow: hidden;
+
+        /* To hide slides in x-direction */
+        position: relative;
+    }
+
+    /* Wrapper which wraps all the 
+       slideshow images stylings */
+    .slideshow-wrapper {
+        display: flex;
+
+        /* We give it width as 400% because 
+        we are making a 4 image carousel.
+        If you want to make for example, 
+        5 images carousel, then give width 
+        as 500%. */
+        width: 400%;
+        height: 110%;
+        position: relative;
+
+        /* Change the animation settings */
+        animation: slideshow 20s infinite;
+    }
+
+    /* Define width and height for images */
+    .slide {
+        width: 90%;
+        height: 90%;
+        padding-left: 2%;
+    }
+
+    .slide-img {
+        width: 90%;
+        height: 90%;
+        object-fit: cover;
+    }
+
+    /* @keyframes are used to provide 
+    animations We make these settings 
+    for 4 image carousel. Make 
+    modification accourding to your needs. */
+    @keyframes slideshow {
+        0% {
+            left: 0;
+        }
+
+        10% {
+            left: 0;
+        }
+
+        15% {
+            left: -100%;
+        }
+
+        25% {
+            left: -100%;
+        }
+
+        30% {
+            left: -200%;
+        }
+
+        40% {
+            left: -200%;
+        }
+
+        45% {
+            left: -300%;
+        }
+
+        55% {
+            left: -300%;
+        }
+
+        60% {
+            left: -200%;
+        }
+
+        70% {
+            left: -200%;
+        }
+
+        75% {
+            left: -100%;
+        }
+
+        85% {
+            left: -100%;
+        }
+
+        90% {
+            left: 0%;
+        }
+    }
+
+    /* End of slideshow stylings */
+
+    /* Carousel control buttons stylings */
+    .slide-btn {
+        background-color: #bbb;
+        border-radius: 50%;
+        border: .2rem solid #1200d3;
+        width: 1.2rem;
+        height: 1.2rem;
+        outline: none;
+        cursor: pointer;
+
+        /* Stylings for positioning the 
+        buttons at the bottom of the 
+        carousel */
+        position: absolute;
+        bottom: 3%;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 70;
+    }
+
+    /* As we provide position as absolute, 
+    the buttons places one over the other. 
+    So, we have to place them individually
+    at their correct positions. */
+    .slide-btn-1 {
+        left: 45%;
+    }
+
+    .slide-btn-2 {
+        left: 50%;
+    }
+
+    .slide-btn-3 {
+        left: 55%;
+    }
+
+    .slide-btn-4 {
+        left: 60%;
+    }
+
+    /* When we focus on the particular button, 
+    the animation stops to that particular 
+    image to which the button is associated. */
+    .slide-btn-1:focus~.slideshow-wrapper {
+        animation: none;
+        left: 0;
+    }
+
+    .slide-btn-2:focus~.slideshow-wrapper {
+        animation: none;
+        left: -100%;
+    }
+
+    .slide-btn-3:focus~.slideshow-wrapper {
+        animation: none;
+        left: -200%;
+    }
+
+    .slide-btn-4:focus~.slideshow-wrapper {
+        animation: none;
+        left: -300%;
+    }
+
+    /* When we focus on the button, the 
+    background color changes */
+    .slide-btn:focus {
+        background-color: #308d46;
+    }
+.cards{
+    margin-top: 60px;
+    align-items: center;
+    margin-left: 150px;
+    margin-right: 150px;
+}
+
+.aa{
+    height: 200px;
+    display: flex;
+}
+
+footer{
+    background: rgb(52,221,90);
+    background: linear-gradient(90deg, rgba(52,221,90,1) 38%, rgba(14,148,67,1) 100%);
+    height: 250px;
+    width: 100%;
+    display: flex;
+    position: absolute;
+}
+
+.bb2{
+    margin-left: 300px;
+}
+
+.bbb{
+    list-style: none;
+    margin-left: 50px;
+    color: white;
+    font-size: 20px;
+    margin-top: 50px;
+}
+
+.bbbb{
+    list-style: none;
+    margin-left: 490px;
+    color: white;
+    font-size: 20px;
+    margin-top: 50px;
+}
+
+.bb3{
+    list-style: none;
+    color: white;
+}
+
+ul{
+    float: left;
+}
+
+.logo1{
+    background: rgb(52,221,90);
+    background: linear-gradient(90deg, rgba(52,221,90,1) 38%, rgba(14,148,67,1) 100%);
+    height: 330px;
+    width: 100%;
+    text-align: center;
+}
+
+.logo2{
+    margin-top: 250px;
+}
+
+.main{
+    display: grid;
+    margin-bottom: 25%;
+}
+
+.main > form{
+    display: inline-flex;
+    margin: 0;
+    padding: 0;
+}
+
+.main > form > .form-label{
+    position: relative;
+    left: 40%;
+}
+
+.main > form > .form-label > label{
+    padding: 0;
+    margin: 0;
+}
+
+.main > form > .form-input{
+    position: relative;
+    left: 43%;
+}
+
+.main > form > .form-input > #enviar{
+    position: relative;
+    right: 20%;
+    top: 15%;
+}
+
+.main > .voluntariar{
+    text-align: center;
+    margin: 25px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
