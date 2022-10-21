@@ -1,6 +1,7 @@
 body{
     padding: 0;
     margin: 2px;
+    background-color: rgb(255, 235, 235);
 }
 
 .navbar{
@@ -13,22 +14,13 @@ body{
     color:rgb(255, 255, 255);
 
 }
-.navbar-nav{
-    
-    height: 100px;
-    width: 100%;
-    display: top;
-    align-items: center;
-    color:rgb(255, 255, 255);
 
-}
 .logo{
     margin-left: 30px;
-    margin-top: 10px;
 }
 
 .aa1{
-    margin-left: 1200px;
+    margin-left: 500px;
 }
 
 .aa2{
@@ -36,8 +28,14 @@ body{
     list-style: none;
     margin-left: 60px;
     color: white;
-    font-size: 18px;
-    margin-top: 15px;
+    font-size: 20px;
+}
+
+div > .imagem{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
 }
 
 .aa2:hover{
@@ -48,41 +46,72 @@ body{
     color: #045690;
 }
 
-/*.carrosel-slide{
-    display: block;
-    height: 50%;
-    width: 30%;
-    margin: auto;
-    margin-top: 70px;
-    position: relative;
-}
-.slider li {
-    list-style: none;
-    position: absolute;
-}
-
-.slider img {
-    margin: auto;
-    height: 80%;
-    width: 30%;
-    vertical-align: top;
-}*/
-    /* Default stylings */
-    * {
-        box-sizing: border-box;
-        margin: 0;
-        padding: 0;
-    }
-
-    /* Provides background color to body */
-    body {
-        background-color: rgb(255, 235, 235);
-    }
-
     .h1 {
          color: #045690;
          text-align: center;
  
+    }
+
+    .cards{
+        margin-top: 60px;
+        align-items: center;
+        margin-left: 150px;
+        margin-right: 150px;
+    }
+    
+    .aa{
+        height: 200px;
+        display: flex;
+    }
+    
+    footer{
+        background: rgb(52,221,90);
+        background: linear-gradient(90deg, rgba(52,221,90,1) 38%, rgba(14,148,67,1) 100%);
+        height: 250px;
+        width: 100%;
+        display: flex;
+        position: absolute;
+    }
+    
+    .bb2{
+        margin-left: 300px;
+    }
+    
+    .bbb{
+        list-style: none;
+        margin-left: 50px;
+        color: white;
+        font-size: 20px;
+        margin-top: 50px;
+    }
+    
+    .bbbb{
+        list-style: none;
+        margin-left: 490px;
+        color: white;
+        font-size: 20px;
+        margin-top: 50px;
+    }
+    
+    .bb3{
+        list-style: none;
+        color: white;
+    }
+    
+    ul{
+        float: left;
+    }
+    
+    .logo1{
+        background: rgb(52,221,90);
+        background: linear-gradient(90deg, rgba(52,221,90,1) 38%, rgba(14,148,67,1) 100%);
+        height: 330px;
+        width: 100%;
+        text-align: center;
+    }
+    
+    .logo2{
+        margin-top: 250px;
     }
     
     .main-heading{
@@ -288,67 +317,7 @@ body{
     .slide-btn:focus {
         background-color: #308d46;
     }
-.cards{
-    margin-top: 60px;
-    align-items: center;
-    margin-left: 150px;
-    margin-right: 150px;
-}
 
-.aa{
-    height: 200px;
-    display: flex;
-}
-
-footer{
-    background: rgb(52,221,90);
-    background: linear-gradient(90deg, rgba(52,221,90,1) 38%, rgba(14,148,67,1) 100%);
-    height: 250px;
-    width: 100%;
-    display: flex;
-    position: absolute;
-}
-
-.bb2{
-    margin-left: 300px;
-}
-
-.bbb{
-    list-style: none;
-    margin-left: 50px;
-    color: white;
-    font-size: 20px;
-    margin-top: 50px;
-}
-
-.bbbb{
-    list-style: none;
-    margin-left: 490px;
-    color: white;
-    font-size: 20px;
-    margin-top: 50px;
-}
-
-.bb3{
-    list-style: none;
-    color: white;
-}
-
-ul{
-    float: left;
-}
-
-.logo1{
-    background: rgb(52,221,90);
-    background: linear-gradient(90deg, rgba(52,221,90,1) 38%, rgba(14,148,67,1) 100%);
-    height: 330px;
-    width: 100%;
-    text-align: center;
-}
-
-.logo2{
-    margin-top: 250px;
-}
 
 .main{
     display: grid;
